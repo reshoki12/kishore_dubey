@@ -1,95 +1,365 @@
-KD What I Build Case Studies Skills Principles About Contact ☰ 
-KD
-Lead Software Engineer · Backend & Distributed Systems
-Kishore Dubey
-I design secure, high-availability backend systems for digital banking and fintech — event-driven microservices that keep money moving for millions of customers, 99.99% of the time.
-"16+ years turning complex financial systems into resilient, scalable platforms — from treasury and payments to fraud detection and compliance."
-Java Kotlin Spring Boot Kafka AWS Kubernetes Microservices Docker 
-View Case Studies Download Résumé Get in Touch 
-GitHub LinkedIn Email 
-What I Build
-Sixteen years across banking, payments, and fintech — from monoliths to distributed, event-driven platforms.
-⎈
-Distributed Backend Systems
-Event-driven microservices architected around Kafka, SQS, and RabbitMQ, using CQRS, Saga, Circuit Breaker, and API Gateway patterns to keep systems consistent and fault tolerant under real financial load.
-☁
-Cloud-Native Platforms
-AWS-first architectures (ECS Fargate, Lambda, DynamoDB, KMS), containerized with Docker and Kubernetes, with CI/CD pipelines and full-stack observability via Grafana, Prometheus, and ELK.
-🏦
-Banking & Fintech Systems
-Treasury management, multi-currency payment processing, KYC automation, and fraud detection — engineered to meet PCI-DSS compliance and regulatory audit requirements.
-Case Studies
-Enterprise banking systems are rarely open source — here's the architecture and impact behind the platforms I've led.
-Treasury Management Platform
-Revolut · 2026–Present 
-Leading backend development of a real-time treasury platform, streaming 500K+ Kafka events/day with exactly-once semantics. Built fault-tolerant sourcing of global securities, third-party integrations, and live market data indicators.
-JavaKotlinSpring BootKafka PostgreSQLGCPKubernetes 
-Concurrent Product R&D Platform
-Confidential · 2024–2026 
-Built distributed microservices for highly concurrent modules, focused on real-time streaming and low-latency state. Used RocksDB and PostgreSQL for high-throughput data layers, with Project Reactor powering reactive, responsive systems.
-KotlinAkkaNATSRocksDB PostgreSQLDocker 
-Mobile Consumer Banking Service Layer
-American Express, Singapore · 2019–2024 
-Designed the mobile banking service layer for millions of customers — 15+ microservices supporting millions of TPS, 99.99% availability, and <100ms latency. Led AWS cloud architecture, zero-trust security, and an 8+ engineer team.
-KotlinKtorJavaSpring Boot AWS (ECS Fargate, Lambda, SQS, KMS)RedisOAuth2/JWT 
-Merchant Payment APIs & Transaction Processing
-American Express, Singapore · 2019–2024 
-Architected merchant transaction processing APIs handling millions of payments daily, plus a Spring Batch reconciliation system for high-volume settlement — all built to PCI-DSS compliance standards.
-JavaSpring BootSpring Batch Spring SecurityDB2 
-Real-Time Analytics Platform
-Equinix, Singapore · 2018–2019 
-Designed an analytics platform for real-time ingestion, processing, and visualization. Led ElasticSearch (1.x→6.x) and MongoDB (2.x→4.x) upgrades, plus a Hazelcast caching layer that cut database load significantly.
-JavaPythonCassandraElasticSearch MongoDBHazelcast 
-Technical Skills
-Architecture & Design
-MicroservicesEvent-Driven ArchitectureSOA CQRSEvent SourcingSagaCircuit Breaker API GatewayOAuth2 / JWTPCI-DSSOWASP 
-Banking & Financial Domain
-Treasury ManagementPaymentsSettlement KYC AutomationFraud DetectionRegulatory Compliance Multi-currency OpsMarket Data 
-Backend
-JavaKotlinPythonSpring Boot Spring CloudAkkaProject Reactor PostgreSQLMongoDBDynamoDBRocksDB RedisHazelcastElasticSearch 
-Frontend
-ReactNext.jsRedux ToolkitTypeScript Tailwind CSSMaterial UIJestCypress 
-Cloud & DevOps
-AWSGCPOpenShiftDocker KubernetesJenkinsGitLab CI/CDGrafana PrometheusELK StackOpenTelemetry 
-Agile & Leadership
-Team Leadership (8+)MentoringScrum / Kanban Stakeholder ManagementTDDArchitectural Governance 
-Engineering Principles
-🔒
-Security First
-Zero-trust design, encryption at rest and in transit, OAuth2/JWT, and PCI-DSS compliance built in from day one.
-📈
-Scalability
-Systems designed to handle millions of TPS and 500K+ daily events without re-architecture.
-⏱
-High Availability
-99.99% uptime and sub-100ms latency targets, backed by circuit breakers and fault tolerant messaging.
-🧩
-Clean Architecture
-Clear bounded contexts, documented via C4 and UML, so systems stay maintainable as teams and scope grow.
-✅
-Testing & TDD
-Test-driven development, Cucumber/Gherkin BDD, and CI/CD pipelines that catch issues before production.
-🤝
-Business Value
-Close collaboration with product owners and stakeholders to keep architecture aligned with business outcomes.
-About Me
-I'm a Lead Software Engineer with 16+ years building the backend systems that banks and fintechs run on. I care most about the systems no one notices — the ones that just work, at scale, under load, at 3am during a market event. My approach favors clear service boundaries, observability from day one, and code that the next engineer can understand without a hallway conversation.
-2026 – Present 
-Senior Software Engineer, Revolut (UAE)
-Leading backend for the Treasury Management Platform.
-2024 – 2026 
-Senior Engineer (Product R&D), Confidential (UAE)
-Distributed, high-concurrency systems in Kotlin and Akka.
-2019 – 2024 
-Senior Software Engineer, American Express (Singapore)
-Mobile banking service layer and merchant payment APIs.
-2018 – 2019 
-Sr. Staff Engineer (Technical Architect), Equinix (Singapore)
-Real-time analytics platform architecture.
-2008 – 2018 
-Software Engineer / Technical Lead — American Express, Wipro, Zensar (USA & India)
-SOA architecture and enterprise banking applications.
-Contact
-Based in Dubai, UAE — open to backend architecture and lead engineering roles.
-Email kishoredubeysg@gmail.com Phone +971 54 296 9786 LinkedIn Connect with me GitHub See my repos 
-© Kishore Dubey. Built with HTML, CSS & JS — hosted on GitHub Pages.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kishore Dubey — Lead Software Engineer</title>
+<meta name="description" content="Kishore Dubey — Lead Software Engineer / Backend Architect specializing in event-driven microservices and cloud-native banking platforms.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-logo">KD</a>
+    <nav class="nav-links">
+      <a href="#build">What I Build</a>
+      <a href="#work">Case Studies</a>
+      <a href="#skills">Skills</a>
+      <a href="#principles">Principles</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<main>
+
+<section id="top" class="hero">
+  <div class="container hero-inner">
+    <div class="avatar">KD</div>
+    <p class="eyebrow">Lead Software Engineer · Backend &amp; Distributed Systems</p>
+    <h1>Kishore Dubey</h1>
+    <p class="tagline">I design secure, high-availability backend systems for digital banking and
+      fintech — event-driven microservices that keep money moving for millions of customers,
+      99.99% of the time.</p>
+    <blockquote>"16+ years turning complex financial systems into resilient, scalable
+      platforms — from treasury and payments to fraud detection and compliance."</blockquote>
+
+    <div class="badges">
+      <span class="badge">Java</span>
+      <span class="badge">Kotlin</span>
+      <span class="badge">Spring Boot</span>
+      <span class="badge">Kafka</span>
+      <span class="badge">AWS</span>
+      <span class="badge">Kubernetes</span>
+      <span class="badge">Microservices</span>
+      <span class="badge">Docker</span>
+    </div>
+
+    <div class="cta-row">
+      <a href="#work" class="btn btn-primary">View Case Studies</a>
+      <a href="assets/kishore_dubey.pdf" class="btn btn-secondary" download>Download Résumé</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:kishoredubeysg@gmail.com">Email</a>
+    </div>
+  </div>
+</section>
+
+<section id="build" class="section">
+  <div class="container">
+    <h2 class="section-title">What I Build</h2>
+    <p class="section-sub">Sixteen years across banking, payments, and fintech — from monoliths
+      to distributed, event-driven platforms.</p>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-icon">⎈</div>
+        <h3>Distributed Backend Systems</h3>
+        <p>Event-driven microservices architected around Kafka, SQS, and RabbitMQ, using CQRS,
+          Saga, Circuit Breaker, and API Gateway patterns to keep systems consistent and fault
+          tolerant under real financial load.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">☁</div>
+        <h3>Cloud-Native Platforms</h3>
+        <p>AWS-first architectures (ECS Fargate, Lambda, DynamoDB, KMS), containerized with
+          Docker and Kubernetes, with CI/CD pipelines and full-stack observability via Grafana,
+          Prometheus, and ELK.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏦</div>
+        <h3>Banking &amp; Fintech Systems</h3>
+        <p>Treasury management, multi-currency payment processing, KYC automation, and fraud
+          detection — engineered to meet PCI-DSS compliance and regulatory audit
+          requirements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Case Studies</h2>
+    <p class="section-sub">Enterprise banking systems are rarely open source — here's the
+      architecture and impact behind the platforms I've led.</p>
+
+    <div class="grid grid-2">
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Treasury Management Platform</h3>
+          <span class="project-meta">Revolut · 2026–Present</span>
+        </div>
+        <p>Leading backend development of a real-time treasury platform, streaming 500K+ Kafka
+          events/day with exactly-once semantics. Built fault-tolerant sourcing of global
+          securities, third-party integrations, and live market data indicators.</p>
+        <div class="tags">
+          <span>Java</span><span>Kotlin</span><span>Spring Boot</span><span>Kafka</span>
+          <span>PostgreSQL</span><span>GCP</span><span>Kubernetes</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Concurrent Product R&amp;D Platform</h3>
+          <span class="project-meta">Confidential · 2024–2026</span>
+        </div>
+        <p>Built distributed microservices for highly concurrent modules, focused on real-time
+          streaming and low-latency state. Used RocksDB and PostgreSQL for high-throughput data
+          layers, with Project Reactor powering reactive, responsive systems.</p>
+        <div class="tags">
+          <span>Kotlin</span><span>Akka</span><span>NATS</span><span>RocksDB</span>
+          <span>PostgreSQL</span><span>Docker</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Mobile Consumer Banking Service Layer</h3>
+          <span class="project-meta">American Express, Singapore · 2019–2024</span>
+        </div>
+        <p>Designed the mobile banking service layer for millions of customers — 15+
+          microservices supporting millions of TPS, 99.99% availability, and &lt;100ms latency.
+          Led AWS cloud architecture, zero-trust security, and an 8+ engineer team.</p>
+        <div class="tags">
+          <span>Kotlin</span><span>Ktor</span><span>Java</span><span>Spring Boot</span>
+          <span>AWS (ECS Fargate, Lambda, SQS, KMS)</span><span>Redis</span><span>OAuth2/JWT</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Merchant Payment APIs &amp; Transaction Processing</h3>
+          <span class="project-meta">American Express, Singapore · 2019–2024</span>
+        </div>
+        <p>Architected merchant transaction processing APIs handling millions of payments daily,
+          plus a Spring Batch reconciliation system for high-volume settlement — all built to
+          PCI-DSS compliance standards.</p>
+        <div class="tags">
+          <span>Java</span><span>Spring Boot</span><span>Spring Batch</span>
+          <span>Spring Security</span><span>DB2</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Real-Time Analytics Platform</h3>
+          <span class="project-meta">Equinix, Singapore · 2018–2019</span>
+        </div>
+        <p>Designed an analytics platform for real-time ingestion, processing, and visualization.
+          Led ElasticSearch (1.x→6.x) and MongoDB (2.x→4.x) upgrades, plus a Hazelcast caching
+          layer that cut database load significantly.</p>
+        <div class="tags">
+          <span>Java</span><span>Python</span><span>Cassandra</span><span>ElasticSearch</span>
+          <span>MongoDB</span><span>Hazelcast</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="grid grid-2 skills-grid">
+      <div class="skill-group">
+        <h3>Architecture &amp; Design</h3>
+        <div class="tags">
+          <span>Microservices</span><span>Event-Driven Architecture</span><span>SOA</span>
+          <span>CQRS</span><span>Event Sourcing</span><span>Saga</span><span>Circuit Breaker</span>
+          <span>API Gateway</span><span>OAuth2 / JWT</span><span>PCI-DSS</span><span>OWASP</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Banking &amp; Financial Domain</h3>
+        <div class="tags">
+          <span>Treasury Management</span><span>Payments</span><span>Settlement</span>
+          <span>KYC Automation</span><span>Fraud Detection</span><span>Regulatory Compliance</span>
+          <span>Multi-currency Ops</span><span>Market Data</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <div class="tags">
+          <span>Java</span><span>Kotlin</span><span>Python</span><span>Spring Boot</span>
+          <span>Spring Cloud</span><span>Akka</span><span>Project Reactor</span>
+          <span>PostgreSQL</span><span>MongoDB</span><span>DynamoDB</span><span>RocksDB</span>
+          <span>Redis</span><span>Hazelcast</span><span>ElasticSearch</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="tags">
+          <span>React</span><span>Next.js</span><span>Redux Toolkit</span><span>TypeScript</span>
+          <span>Tailwind CSS</span><span>Material UI</span><span>Jest</span><span>Cypress</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; DevOps</h3>
+        <div class="tags">
+          <span>AWS</span><span>GCP</span><span>OpenShift</span><span>Docker</span>
+          <span>Kubernetes</span><span>Jenkins</span><span>GitLab CI/CD</span><span>Grafana</span>
+          <span>Prometheus</span><span>ELK Stack</span><span>OpenTelemetry</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Agile &amp; Leadership</h3>
+        <div class="tags">
+          <span>Team Leadership (8+)</span><span>Mentoring</span><span>Scrum / Kanban</span>
+          <span>Stakeholder Management</span><span>TDD</span><span>Architectural Governance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="principles" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Engineering Principles</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>Security First</h3>
+        <p>Zero-trust design, encryption at rest and in transit, OAuth2/JWT, and PCI-DSS
+          compliance built in from day one.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Scalability</h3>
+        <p>Systems designed to handle millions of TPS and 500K+ daily events without
+          re-architecture.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⏱</div>
+        <h3>High Availability</h3>
+        <p>99.99% uptime and sub-100ms latency targets, backed by circuit breakers and fault
+          tolerant messaging.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧩</div>
+        <h3>Clean Architecture</h3>
+        <p>Clear bounded contexts, documented via C4 and UML, so systems stay maintainable as
+          teams and scope grow.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <h3>Testing &amp; TDD</h3>
+        <p>Test-driven development, Cucumber/Gherkin BDD, and CI/CD pipelines that catch issues
+          before production.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>Business Value</h3>
+        <p>Close collaboration with product owners and stakeholders to keep architecture aligned
+          with business outcomes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-bio">I'm a Lead Software Engineer with 16+ years building the backend systems
+      that banks and fintechs run on. I care most about the systems no one notices — the ones
+      that just work, at scale, under load, at 3am during a market event. My approach favors
+      clear service boundaries, observability from day one, and code that the next engineer can
+      understand without a hallway conversation.</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-year">2026 – Present</span>
+        <div>
+          <h4>Senior Software Engineer, Revolut (UAE)</h4>
+          <p>Leading backend for the Treasury Management Platform.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2024 – 2026</span>
+        <div>
+          <h4>Senior Engineer (Product R&amp;D), Confidential (UAE)</h4>
+          <p>Distributed, high-concurrency systems in Kotlin and Akka.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2019 – 2024</span>
+        <div>
+          <h4>Senior Software Engineer, American Express (Singapore)</h4>
+          <p>Mobile banking service layer and merchant payment APIs.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2018 – 2019</span>
+        <div>
+          <h4>Sr. Staff Engineer (Technical Architect), Equinix (Singapore)</h4>
+          <p>Real-time analytics platform architecture.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2008 – 2018</span>
+        <div>
+          <h4>Software Engineer / Technical Lead — American Express, Wipro, Zensar (USA &amp; India)</h4>
+          <p>SOA architecture and enterprise banking applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-sub">Based in Dubai, UAE — open to backend architecture and lead
+      engineering roles.</p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:kishoredubeysg@gmail.com">
+        <strong>Email</strong>
+        <span>kishoredubeysg@gmail.com</span>
+      </a>
+      <a class="contact-card" href="tel:+971542969786">
+        <strong>Phone</strong>
+        <span>+971 54 296 9786</span>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" rel="noopener">
+        <strong>LinkedIn</strong>
+        <span>Connect with me</span>
+      </a>
+      <a class="contact-card" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">
+        <strong>GitHub</strong>
+        <span>See my repos</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Kishore Dubey. Built with HTML, CSS &amp; JS — hosted on GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
